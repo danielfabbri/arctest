@@ -1,9 +1,90 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="25.0.3">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="28.2.5">
   <diagram name="Página-1" id="aDLdrK78ixU2hBSMUlmX">
-    <mxGraphModel>
+    <mxGraphModel dx="1426" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="L851UuA8DIwfwTv3A-Ql-1" value="&lt;div&gt;Mobile / Web&lt;/div&gt;&lt;div&gt;Client&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L851UuA8DIwfwTv3A-Ql-2" value="API Gateway&lt;div&gt;(Rate Limit / WAF)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L851UuA8DIwfwTv3A-Ql-3" value="Orquestração de pagamento" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L851UuA8DIwfwTv3A-Ql-4" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="L851UuA8DIwfwTv3A-Ql-1" target="L851UuA8DIwfwTv3A-Ql-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="430" as="sourcePoint" />
+            <mxPoint x="440" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L851UuA8DIwfwTv3A-Ql-5" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="L851UuA8DIwfwTv3A-Ql-2" target="L851UuA8DIwfwTv3A-Ql-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="419.5" y="230" as="sourcePoint" />
+            <mxPoint x="419.5" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L851UuA8DIwfwTv3A-Ql-6" value="Antifraude&lt;div&gt;(Rules + ML)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L851UuA8DIwfwTv3A-Ql-7" value="" style="curved=0;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="L851UuA8DIwfwTv3A-Ql-3" target="L851UuA8DIwfwTv3A-Ql-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="390" as="sourcePoint" />
+            <mxPoint x="440" y="340" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="420" y="280" />
+              <mxPoint x="300" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L851UuA8DIwfwTv3A-Ql-8" value="" style="curved=0;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="260" as="sourcePoint" />
+            <mxPoint x="540" y="310" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="420" y="280" />
+              <mxPoint x="540" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L851UuA8DIwfwTv3A-Ql-9" value="PIX Adapter&lt;div&gt;(API Bacen mTLS oAuth2)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L851UuA8DIwfwTv3A-Ql-10" value="Banco Central&lt;div&gt;(DICT / Pix API)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L851UuA8DIwfwTv3A-Ql-11" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="L851UuA8DIwfwTv3A-Ql-9" target="L851UuA8DIwfwTv3A-Ql-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="630" as="sourcePoint" />
+            <mxPoint x="440" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L851UuA8DIwfwTv3A-Ql-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="L851UuA8DIwfwTv3A-Ql-12" target="L851UuA8DIwfwTv3A-Ql-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L851UuA8DIwfwTv3A-Ql-12" value="Kafka Cluster&lt;div&gt;- pix.requests&lt;/div&gt;&lt;div&gt;- fraud.scores&lt;/div&gt;&lt;div&gt;- pix.events&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="520" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="L851UuA8DIwfwTv3A-Ql-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="L851UuA8DIwfwTv3A-Ql-6" target="L851UuA8DIwfwTv3A-Ql-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550" y="380" as="sourcePoint" />
+            <mxPoint x="550" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L851UuA8DIwfwTv3A-Ql-14" value="" style="curved=0;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="L851UuA8DIwfwTv3A-Ql-10" target="L851UuA8DIwfwTv3A-Ql-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="460" as="sourcePoint" />
+            <mxPoint x="420" y="510" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="540" y="480" />
+              <mxPoint x="300" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L851UuA8DIwfwTv3A-Ql-15" value="MongoDB&lt;div&gt;(Payments, Accounts, Audit Logs)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="650" width="120" height="90" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
